@@ -1,6 +1,6 @@
-# Development of a Houseprice 🏡 Prediction 📈 Model
+# Development of a Houseprice 🏡 Prediction 📈 Model Using a Custom Built Linear Regressor from Scratch
 
-This repository contains the implementation of the project titled _"Development of a Houseprice Prediction Model"_, at the National Centre for Artificial Intelligence and Robotics (NCAIR), Nigeria.
+This repository contains the implementation of the project titled _"# Development of a Houseprice Prediction Model Using a Custom Built Linear Regressor from Scratch"_, at the National Centre for Artificial Intelligence and Robotics (NCAIR), Nigeria.
 
 ---
 
@@ -71,3 +71,39 @@ The focus of this project was to develop a custom linear regression model from s
     
 15. **Saved the final model**  
     The final trained model was serialized to disk using `joblib` for later reuse in inference or deployment.
+
+---
+    
+## 🧮 Model Summary
+
+| **Hyperparameter**                              | **Value**                                                                    |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Learning Rate**                                      | 0.001                           |
+| **epochs**                                       | 1000 |
+
+---
+
+## 📈 Evaluation Metrics
+
+| **Metric**                              | **Value**                                                                    |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Mean Squared Error**                                      | 1,366,620,309.75                           |
+| **Root Mean Squared Error**                                      | 36967.8                           |
+| **Coefficient of Determination**                                       | 0.5048 |
+
+
+### Discussion of Results
+
+The model achieved an MSE of 1,366,620,309.75 and an RMSE of approximately 36,968, indicating that the predicted house prices differed from the actual prices by an average margin of about ₦36k. For a house-price prediction problem, this level of error suggests that the model captured some of the underlying trends but still struggled with accurately modeling the full variability of the data.
+
+The R² score of 0.5048 implied that the model was able to explain only about 50% of the variance in the house prices. While this is a reasonable starting point for a basic linear regression model built from scratch, it also indicated that the true relationships between the features and house prices were likely more complex than what a simple linear model could capture.
+
+Overall, these results suggested that the model had moderate predictive capability but lacked the sophistication required to fully capture non-linearities, interactions, and feature complexities present in real-world housing markets.
+
+---
+
+## 🔮 Future Work
+
+Future improvements could focus on expanding the dataset with more relevant features, such as location-specific variables and property characteristics, to improve the model’s predictive capacity. More advanced machine learning approaches particularly tree-based models like Random Forests or XGBoost could also be explored to capture complex, non-linear patterns that the linear model may miss. In addition, applying feature engineering, regularization techniques, and hyperparameter tuning could significantly reduce error and improve model stability. 
+
+---

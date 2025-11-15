@@ -94,7 +94,7 @@ The focus of this project was to develop a custom linear regression model from s
 
 ### Discussion of Results
 
-The model achieved an MSE of 1,366,620,309.75 and an RMSE of approximately 36,968, indicating that the predicted house prices differed from the actual prices by an average margin of about ₦36k. For a house-price prediction problem, this level of error suggests that the model captured some of the underlying trends but still struggled with accurately modeling the full variability of the data.
+The model achieved an MSE of 1,366,620,309.75 and an RMSE of approximately 36,968, indicating that the predicted house prices differed from the actual prices by an average margin of about 36k. For a house-price prediction problem, this level of error suggests that the model captured some of the underlying trends but still struggled with accurately modeling the full variability of the data.
 
 The R² score of 0.5048 implied that the model was able to explain only about 50% of the variance in the house prices. While this is a reasonable starting point for a basic linear regression model built from scratch, it also indicated that the true relationships between the features and house prices were likely more complex than what a simple linear model could capture.
 

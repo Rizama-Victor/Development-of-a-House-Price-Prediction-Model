@@ -40,7 +40,7 @@ The focus of this project was to develop a custom linear regression model from s
    Categorical columns were converted to numeric form using  `LabelEncoder` so they could be used by the linear model.
 
 5. **Engineered features**  
-   Useful features were created or derived (date parts, interaction terms, or domain-specific transformations) to make predictive patterns more explicit.
+   Not Useful features were dropped to make predictive patterns more explicit.
 
 6. **Split the data**  
    The dataset was split into training and test subsets (typically with `train_test_split`) to preserve an unseen set for final evaluation. Next, feature matrices (`X_train`, `X_test`) and target vectors (`y_train`, `y_test`) were assembled from the processed DataFrame.
@@ -49,7 +49,7 @@ The focus of this project was to develop a custom linear regression model from s
    Numeric features were standardized with `StandardScaler` to place them on comparable scales for model training.
 
 8. **Trained the model**  
-    The train set data was then fitted to the custom built Linear Regressor from scratct to enable the model understand the underlying patterns in the data.
+    The train set data was then fitted to the custom built Linear Regressor (from scratch) to enable the model understand the underlying patterns in the data.
 
 9. **Generated predictions**  
     The trained model produced predictions on the test set for quantitative evaluation.
@@ -64,7 +64,7 @@ The focus of this project was to develop a custom linear regression model from s
     To further improve the model, ridge and lasso regression estimators were set up and hyperparameter tuning was performed (e.g., via `GridSearchCV`) using cross-validation to find the best regularization strengths. The best model configuration discovered was re-trained on the training data.
     
 13. **Model Performance Re-evaluation**  
-    Regression metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), Root MSE (RMSE), and R² score were computed using `sklearn.metrics` to assess accuracy and fit.
+    Regression metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), Root MSE (RMSE), and R² score were re-computed using `sklearn.metrics` to assess accuracy and fit of the re-trained model.
     
 14. **Re-visualization of the results**  
     Diagnostic plots (residual plots, feature importance or coefficients) were produced with `matplotlib` and `seaborn` to re-inspect model behavior and assumptions.

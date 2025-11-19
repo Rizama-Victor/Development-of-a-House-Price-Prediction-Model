@@ -15,7 +15,7 @@ The focus of this project was to develop a custom linear regression model from s
 | **numpy**                                       | Performed numerical computations, array handling, and mathematical transformations during preprocessing. |
 | **matplotlib.pyplot**                           | Helped to create basic visualizations to observe data patterns and feature relationships.                 |
 | **seaborn**                                     | Used for statistical visualizations such as correlation heatmaps and distribution plots.                |
-| **scipy.stats (zscore, boxcox)**                | Was used for outlier detection (Z-score) and data transformation (Box-Cox) to stabilize variance.           |
+| **scipy.stats**                | Was used for outlier detection (Z-score) and data transformation (Box-Cox) to stabilize variance.           |
 | **scikit-learn: train_test_split**              | Enabled splitting of the dataset into training and testing sets.                                               |
 | **scikit-learn: StandardScaler**                | Helped scale numerical features so that the regression model trained more effectively.                 |
 | **scikit-learn: OrdinalEncoder**                | Helped convert categorical variables into numerical form for model training.                           |
